@@ -50,22 +50,33 @@ table {
 }
 
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°RESET CSS°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+body{
+    font-family: 'Montserrat';
+
+}
+
+#imagenTitulo{
+    width: 100%;
+    height: 32em;
+    background-size: cover;
+    background-position: 1.5em -7em;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/aiCat.png);
+}
+
+#titulo{
+    font-weight: 884;
+    font-size: 89px;
+    text-align: left;
+    color: #FFB300;
+}
+
+#autor{
+    text-align: right;
+    font-weight: bold;
+    margin: .5em;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
