@@ -129,6 +129,14 @@ table {
     border-spacing: 0;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+
+}
+
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°RESET CSS°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
 body {
@@ -147,14 +155,16 @@ body {
     padding: 0 30px;
 }
 
-#logo{
+#logo {
     font-size: 30px;
     font-weight: lighter;
 }
-a{
+
+a {
     color: inherit;
 }
-#links{
+
+#links {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -162,7 +172,8 @@ a{
     gap: 1em;
     font-weight: lighter;
 }
-#links a{
+
+#links a {
     border-radius: 4px;
     border-color: transparent;
     border-style: solid;
@@ -170,30 +181,31 @@ a{
 
 }
 
-#links a:hover{
+#links a:hover {
     background-color: #4DAEB9;
 }
 
-#contenedorImg{
+#contenedorImg {
     height: 27em;
     width: 100%;
     overflow: hidden;
 }
-main{
+
+main {
     width: 100%;
 }
 
-.frutas{
+.frutas {
     max-width: 100%;
     background-color: whitesmoke;
     display: flex;
-    gap: 2em ;
-    padding: 4em 2em 8em 2em ;
+    gap: 2em;
+    padding: 4em 2em 8em 2em;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.card{
+.card {
     width: 20%;
     height: 20em;
     display: flex;
@@ -202,48 +214,50 @@ main{
     align-items: flex-start;
 }
 
-.contenedorFrutaImg{
+.contenedorFrutaImg {
     overflow: hidden;
     height: 50%;
     width: 100%;
 }
 
-.contenedorFrutaImg img{
+.contenedorFrutaImg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.card h2{
+.card h2 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.card p{
+.card p {
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 1px;
 }
 
-.contenido{
+.contenido {
     max-width: 100%;
     height: 24em;
     display: flex;
-    padding: 4em 2em 4em 2em ;
+    padding: 4em 2em 4em 2em;
     align-items: center;
     justify-content: space-between;
-    background-color: #362019;
+    background-color: #58362c;
     color: #986758;
     gap: 2em;
 
 }
-h4{
+
+h4 {
     font-size: x-large;
     font-weight: bolder;
 
 }
 
-.contenido1, .contenido2{
+.contenido1,
+.contenido2 {
     max-width: 25%;
     height: 100%;
     display: flex;
@@ -251,24 +265,24 @@ h4{
     justify-content: space-between;
 }
 
-.imgContenido{
+.imgContenido {
     max-width: 33%;
     overflow: hidden;
     padding-right: 2em;
-  }
+}
 
 .imgContenido img {
     width: 100%;
 }
 
-.item{
-display: flex;
-padding-top: 2em;
+.item {
+    display: flex;
+    padding-top: 2em;
 
 }
 
 
-.contenido3{
+.contenido3 {
     max-width: 50%;
     height: 100%;
     display: flex;
@@ -278,13 +292,78 @@ padding-top: 2em;
 }
 
 
-.imgContenido3{
+.imgContenido3 {
     max-width: 100%;
     overflow: hidden;
     padding-right: 2em;
     height: 60%;
-  }
+}
 
 .imgContenido3 img {
     width: 100%;
+}
+
+aside {
+    width: 100%;
+
+    background-color: #38170c;
+    color: #986758;
+    display: flex;
+    padding: 4em 2em 4em 2em;
+    gap: 3em;
+}
+
+.aside1 {
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 30px;
+    gap: 2em;
+}
+
+.aside1 a,
+.aside2 a {
+    text-decoration: underline;
+}
+
+.fuerte {
+    font-weight: bolder;
+
+}
+
+i {
+    font-style: italic;
+
+}
+
+.aside2 {
+    max-width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.aside2 li {
+    padding: .5em;
+
+}
+
+aside p,
+aside ul {
+    flex-grow: 1;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #180E0C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    padding: 2.5em;
+    color: #986758;
 }
