@@ -231,7 +231,37 @@ main{
     padding: 4em 2em 8em 2em ;
     align-items: center;
     justify-content: space-between;
-
-
+    background-color: #362019;
+    color: #986758;
 
 }
+
+.contenido1, .contenido2{
+    max-width: 25%;
+}
+
+.imgContenido{
+    max-width: 33%;
+    overflow: hidden;
+    padding-right: 2em;
+  }
+
+.imgContenido img {
+    width: 100%;
+}
+
+.item{
+display: flex;
+padding-top: 2em;
+    
+
+}
+
+
+
+
+.contenido3{
+    max-width: 50%;
+
+}
+
