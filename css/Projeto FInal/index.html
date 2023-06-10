@@ -12,10 +12,20 @@
 <body>
     <div class="navContainer">
         <div class="nav">
-        <div class="miniFoto"></div>
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
+            <div class="miniFoto"></div>
+            <div class="menu">
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
+
+    </div>
+    <div id="links">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#about">About</a>
+        <a href="#about">About</a>
     </div>
     </div>
     <div class="cabeza">
@@ -30,6 +40,19 @@
         </div>
     </div>
 
-    
+    <script>
+ function menu() {
+  var menuHidden = document.getElementById("links");
+  var navContainer = document.getElementsByClassName("navContainer");
+  if (menuHidden.style.display === "flex") {
+    menuHidden.style.display = "none";
+    navContainer[0].style.backgroundColor = "#1D3557";
+  } else {
+    menuHidden.style.display = "flex";
+    navContainer[0].style.backgroundColor = "#E63946";
+  }
+}
+</script>
+        </script>
 </body>
 </html>
