@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #180E0C;
+    padding: 17px 36px;
+    color: white;
+
+}
+
+.menu {
+    height: 18px;
+    width: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.barra {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+}
+
+.imagenInicio {
+    width: 100%;
+    height: 134px;
+    background-image: url(img/imgBig.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 {
+    width: 100%;
+    padding: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.cardFruta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.imagenFruta1 {
+    width: 146px;
+    height: 128px;
+    background-image: url(img/bananas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.imagenFruta2 {
+    width: 146px;
+    height: 128px;
+    background-image: url(img/maças.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.imagenFruta3 {
+    width: 146px;
+    height: 128px;
+    background-image: url(img/pessegos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.imagenFruta4 {
+    width: 146px;
+    height: 128px;
+    background-image: url(img/uvas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.tituloImg {
+    font-size: 13px;
+}
+
+.descripcionFruta {
+    font-size: 10px;
+    line-height: 16.1px;
+}
+
+.section2 {
+    padding: 36px;
+    width: 100%;
+    background-color: #37201A;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+}
+
+h3 {
+    color: #C27159;
+    margin-bottom: 21px;
+}
+
+.iten {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 9px;
+}
+
+.imagenIten {
+    width: 68px;
+    height: 69px;
+    background-image: url(img/pessegos.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    margin-bottom: 13px;
+
+}
+
+.descripcionIten {
+    font-size: 13px;
+    line-height: 17px;
+    color: #7A503E;
+}
+
+.imagenArticulo3{
+    width:100%;
+    height: 92px;
+    background-image: url(img/imgBig.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 18px;
+
+}
+.descripcionArticulo3{
+    font-size: 13px;
+    color: #7A503E;
+    line-height: 20.93px;
+}
+
+.section3{
+    padding: 36px;
+    background-color: #251611;
+    color: #7A503E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+
+}
+.section3 a{
+    color: inherit;
+    margin: 8px 0 ;
+    padding: 0;
+    font-size: 8px;
+    line-height: 12.88px;
+
+}
+
+.section3 h3{
+    margin:0
+}
+.high{
+    color: #C27159;
+}
+.section3 p{
+    font-size: 8px;
+    line-height: 12.88px;
+
+}
+
+.footer{
+    background-color: #180E0C;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7A503E;
+    font-size: 8px;
+
+}
