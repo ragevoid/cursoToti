@@ -1,46 +1,323 @@
-.body{
+.body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
 }
-.navContainer{
+
+/* Contenedor del navegador con menu  */
+.navContainer {
     background-color: #1D3557;
-    padding:0.1em 1em;
+    padding: 0.1em 7%;
+    color: #A8DADC;
 
 }
-.nav{
+
+.nav {
     padding: .3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    color: #A8DADC;
 }
-  #links {
-    display: none;    
+
+/* menu oculto */
+.fa-solid {
+    width: 1.5em;
+    color: #A8DADC;
+
+}
+
+#links {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .navContainer a {
+}
+
+.navContainer a {
     color: white;
     padding: .2em;
     text-decoration: none;
     font-size: 16px;
     display: block;
-  }
+}
 
-
-.miniFoto{
+/* perfil foto */
+.miniFoto {
     width: 2em;
     height: 2em;
     background-size: contain;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #E63946;
     background-image: url(img/perfil.jpeg);
+}
+
+/* Cabeza com foto principal, foto de perfil con redes sociales e paragrafo */
+
+
+.imagenCentral{
+    max-width: 100%;
+    height: 115px;
+    background-color: salmon;
+    background-color: gray;
+    /* background-image: url(img/imgBig.jpg);
+    background-size: cover; */
+    padding: 3% 7% 3% 7%;
+}
+.avatar{
+    width: 7em;
+    height: 7em;
+    background-image: url(img/perfil.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    /* position: absolute;
+    top: 50%;
+    left: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.redes{
+    display: flex;
+    gap: .7em;
+    position: absolute;
+    bottom:-.4em;
 
 }
-.fa-solid{
-color: #F1FAEE;
-width: 1.5em;
+
+.red{
+    background-color: #E63946;
+    border-radius: 50%;
+    padding: 3px;
+
+    border-width: 2px;
+    border-style: solid;
+}
+
+
+
+.presentaCont{
+    background-color: whitesmoke;
+    text-align: left;
+    padding: .5em 7% .7em 7%;
+}
+.presentaCont h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 24px;
+
+}
+.subtitulo{
+    font-weight: 250;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.sobreMi{
+    font-size: small;
+    line-height: 25px;
+
+
+}
+
+.hey{
+font-size: 20px;
+font-weight: bold;
+display: block;
+margin-bottom: 7px;
+}
+
+.formacao{
+    padding: 10px 7% 10px 7%;
+    background-color: #A8DADC;
+    
+}
+
+.subtitulo2{
+    font-size: 24px;
+    font-weight: 50;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.block{
+    background-color: #E63946;
+    width: 7px;
+    display: block;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.infoCont{
+    display: flex;
+margin: 10px 0 10px 0;
+
+
+}
+
+.info{
+    padding: 5px;
+    font-size: 12px;
+}
+
+.descripcao{
+    font-weight: bold;
+
+
+}
+
+
+.experiencia{
+    padding: 10px 7% 10px 7%;
+    background-color: #E63946;
+    
+}
+
+.block2{
+    background-color: #1D3557;
+    width: 7px;
+    display: block;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.projetos{
+    padding: 10px 7% 10px 7%;;
+    background-color: #8D99AE;
+
+}
+
+.cards{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 15px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.selected {
+    grid-column: 1 / span 2;
+  }
+
+.card{
+    background-color: whitesmoke;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    gap: 5px;
+    border-radius: 5px;
+
+
+}
+
+.cardImg{
+    background-color: #1D3557;
+    width: 100%;
+    height: 4em;
+}
+
+.tituloCard{
+    font-size: 14px ;
+    font-weight: bold;
+}
+
+.descripcaoCard{
+    font-size: 10px;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2px;
+}
+
+.boton{
+    width: 100%;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #1D3557;
+    color: #A8DADC;
+    padding: 4px;
+    font-size: 12px;
+}
+
+.contato{
+    background-color: rgb(30, 30, 30);
+    padding: 10px 7% 50px 7%;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 24px  150px 1fr;
+    gap: 10px;
+}
+
+.subtituloContato{
+    /* grid-column : 1 / span 2; */
+    font-size: 24px;
+    font-weight: 50;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    height: 24px;
+
+}
+
+.contatoCont{
+    font-size: 13px;
+    line-height: 30px;
+    width: fit-content;
+}
+
+.formulario{
+    margin-top: 7px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nombre, #email, #asunto, #mensaje{
+    width: 85%;
+    border-radius: 8px;
+    border-style: none;
+    height: 27px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#mensaje{
+    height: 50px;
+
+
+}
+
+.submit{
+    border-style: none;
+    background-color: #E63946;
+    padding: 6px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+}
+label{
+    display: block;
+    margin-top:  5px; ;
+    margin-bottom: 5px;
 }

@@ -1,58 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>_escorcheDev</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<!-- Contenedor nav para o icono de perfil e o menu Mobile -->
 <body>
     <div class="navContainer">
         <div class="nav">
             <div class="miniFoto"></div>
             <div class="menu">
-            <a href="javascript:void(0);" class="icon" onclick="menu()">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </div>
-
-    </div>
-    <div id="links">
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="#about">About</a>
-        <a href="#about">About</a>
-    </div>
-    </div>
-    <div class="cabeza">
-        <div class="imagenCentral"></div>
-        <div class="avatar">
-            <div class="redes">
-                <div class="red instagram"><i class="fa-brands fa-instagram"></i></div>
-                <div class="red github"><i class="fa-brands fa-github"></i></div>
-                <div class="red linkedin"><i class="fa-brands fa-linkedin"></i></div>
-
+                <a href="javascript:void(0);" class="icon" onclick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
+<!-- links ocultos para o menu mobile -->
+        </div>
+        <div id="links">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#about">About</a>
+            <a href="#about">About</a>
         </div>
     </div>
+
+
+<!-- Header del projecto, con imagenes de avatar y redes sociales -->
+
+        <div class="imagenCentral">
+            <div class="avatar">
+                <div class="redes">
+                    <div class="red instagram"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="red github"><i class="fa-brands fa-github"></i></div>
+                    <div class="red linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                </div>
+        </div>
+        </div>
+
+
+        <div class="presentaCont">
+        <h1>Ricardo Escorche <span class="subtitulo">-Front-End Developer-</span></h1>
+
+        <p class="sobreMi">
+            <span class="hey">Hey!</span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quia quas, quam error quisquam, ut consequatur quod,
+            doloribus corrupti atque optio? Praesentium dignissimos nemo ipsum animi distinctio beatae at quaerat.
+        </p>
+    </div>
+
+
+<div class="formacao">
+
+        <h2 class="subtitulo2">Formação</h2>
+
+        <div class="infoCont">
+        <span class="block"></span>
+        <div class="info">
+            <p class="ano">2023</p>
+            <p class="descripcao">Fisico Nuclear Especialista em Sonos </p>
+            <p class="lugar">Universidad Nacional Experimental da Lua</p>
+        </div>
+    </div>
+
+        <div class="infoCont">
+        <span class="block"></span>
+        <div class="info">
+            <p class="ano">2023-2023</p>
+            <p class="descripcao">Fisico Nuclear Especialista em Sonos </p>
+            <p class="lugar">Universidad Nacional Experimental da Lua</p>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="experiencia">
+
+    <h2 class="subtitulo2">Experiencia</h2>
+    
+    <div class="infoCont">
+    <span class="block2"></span>
+    <div class="info">
+        <p class="ano">2022-2023</p>
+        <p class="descripcao">Auxiliar de Layout em Supermercados </p>
+        <p class="lugar">Supermercados Brasão - Chepecó</p>
+    </div>
+</div>
+
+</div>
+
+<div class="projetos">
+    <h2 class="subtitulo2">Projetos</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="cardImg"></div>
+            <h4 class="tituloCard">Titulo del Projeto</h4>
+            <p class="descripcaoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, a quibusdam ea dolor.</p>
+            <div class="botones">
+                <button class="boton">Repositorio</button>
+                <button class="boton">Ver Demo</button>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="cardImg"></div>
+            <h4 class="tituloCard">Titulo del Projeto</h4>
+            <p class="descripcaoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, a quibusdam ea dolor.</p>
+            <div class="botones">
+                <button class="boton">Repositorio</button>
+                <button class="boton">Ver Demo</button>
+            </div>
+
+        </div>
+        <div class="card selected">
+            <div class="cardImg"></div>
+            <h4 class="tituloCard">Titulo del Projeto</h4>
+            <p class="descripcaoCard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, a quibusdam ea dolor.</p>
+            <div class="botones">
+                <button class="boton">Repositorio</button>
+                <button class="boton">Ver Demo</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="contato">
+    <h2 class="subtituloContato">Contato</h2>
+    <div class="contatoCont">
+        <div class="contatoInfo">
+            <p>Quer entrar em contato comigo? Preencha o formulário e entrarei em contato o mais rápido possível. Você também pode me encontrar nas seguintes redes sociais:
+
+            </p>
+            <div class="contatoRedes"></div>
+        </div>
+    </div>
+
+        <form class="fomrulario" method="POST" action="/ruta-de-destino">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+          
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          
+            <button class="submit" type="submit">Enviar</button>
+          </form>
+          
+
+
+
+
+</div>
 
     <script>
- function menu() {
-  var menuHidden = document.getElementById("links");
-  var navContainer = document.getElementsByClassName("navContainer");
-  if (menuHidden.style.display === "flex") {
-    menuHidden.style.display = "none";
-    navContainer[0].style.backgroundColor = "#1D3557";
-  } else {
-    menuHidden.style.display = "flex";
-    navContainer[0].style.backgroundColor = "#E63946";
-  }
-}
-</script>
-        </script>
+        function menu() {
+            var menuHidden = document.getElementById("links");
+            var navContainer = document.getElementsByClassName("navContainer");
+            if (menuHidden.style.display === "flex") {
+                menuHidden.style.display = "none";
+                navContainer[0].style.backgroundColor = "#1D3557";
+            } else {
+                menuHidden.style.display = "flex";
+                navContainer[0].style.backgroundColor = "#E63946";
+            }
+        }
+    </script>
+    </script>
 </body>
+
 </html>
