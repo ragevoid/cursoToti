@@ -19,6 +19,13 @@
     <div class="navContainer">
         <div class="nav">
             <div class="miniFoto"></div>
+            <div id="links2">
+                <a href="#presentaCont">Apresentaçao</a>
+                <a href="#formacao">Formaçao</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Fale Conmigo!</a>
+            </div>
             <div class="menu">
                 <a href="javascript:void(0);" class="icon" onclick="menu()">
                     <i class="fa-solid fa-bars"></i>
@@ -27,11 +34,11 @@
 <!-- links ocultos para o menu mobile -->
         </div>
         <div id="links">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="#about">About</a>
-            <a href="#about">About</a>
+            <a href="#presentaCont">Apresentaçao</a>
+                <a href="#formacao">Formaçao</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Fale Conmigo!</a>
         </div>
     </div>
 
@@ -41,9 +48,9 @@
         <div class="imagenCentral">
             <div class="avatar">
                 <div class="redes">
-                    <div class="red instagram"><i class="fa-brands fa-instagram"></i></div>
-                    <div class="red github"><i class="fa-brands fa-github"></i></div>
-                    <div class="red linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                    <a href=""><div class="red instagram"><i class="fa-brands fa-instagram"></i></div></a>
+                    <a href=""><div class="red github"><i class="fa-brands fa-github"></i></div></a>
+                    <a href=""><div class="red linkedin"><i class="fa-brands fa-linkedin"></i></div></a>
                 </div>
         </div>
         </div>
@@ -141,13 +148,16 @@
     <div class="contatoCont">
         <div class="contatoInfo">
             <p>Quer entrar em contato comigo? Preencha o formulário e entrarei em contato o mais rápido possível. Você também pode me encontrar nas seguintes redes sociais:
-
             </p>
-            <div class="contatoRedes"></div>
+            <div class="contatoRedes">
+                <a href=""><div class="red instagram"><i class="fa-brands fa-instagram"></i></div></a>
+                <a href=""><div class="red github"><i class="fa-brands fa-github"></i></div></a>
+                <a href=""><div class="red linkedin"><i class="fa-brands fa-linkedin"></i></div></a>
+            </div>
         </div>
     </div>
 
-        <form class="fomrulario" method="POST" action="/ruta-de-destino">
+        <form class="formulario" method="POST" action="/ruta-de-destino">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
           
@@ -163,12 +173,11 @@
             <button class="submit" type="submit">Enviar</button>
           </form>
           
-
-
-
-
 </div>
+<style>
+/* Estilos para pantallas con un ancho máximo de 720px */
 
+</style>
     <script>
         function menu() {
             var menuHidden = document.getElementById("links");
