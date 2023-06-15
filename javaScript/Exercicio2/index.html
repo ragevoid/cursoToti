@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+</head>
+
+<body>
+    <h1>Hola mundo</h1>
+    <h1>Olá Mundo</h1>
+    <h1>Hello World</h1>
+    
+    <script>
+function obterInformacoes() {
+  let usuario1 = obterDadosUsuario("Usuário 1");
+  let usuario2 = obterDadosUsuario("Usuário 2");
+
+  console.table(usuario1);
+  console.table(usuario2);
+
+  compararIdade(usuario1, usuario2);
+  compararAltura(usuario1, usuario2);
+  compararCores(usuario1, usuario2);
+}
+
+function obterDadosUsuario(nomeUsuario) {
+  let nome = prompt("Digite o nome do " + nomeUsuario + ":");
+  let sobrenome = prompt("Digite o sobrenome do " + nomeUsuario + ":");
+  let idade = prompt("Digite a idade do " + nomeUsuario + ":");
+  let corFavorita = prompt("Digite a cor favorita do " + nomeUsuario + ":");
+  let alturaCm = prompt("Digite a altura (em cm) do " + nomeUsuario + ":");
+
+  let usuario = {
+    Nome: nome,
+    Sobrenome: sobrenome,
+    Idade: idade,
+    CorFavorita: corFavorita,
+    AlturaCm: alturaCm
+  };
+
+  return usuario;
+}
+
+function compararIdade(usuario1, usuario2) {
+  if (usuario1.Idade > usuario2.Idade) {
+    console.log(usuario1.Nome + " é mais velho(a) do que " + usuario2.Nome);
+  } else if (usuario1.Idade < usuario2.Idade) {
+    console.log(usuario2.Nome + " é mais velho(a) do que " + usuario1.Nome);
+  } else {
+    console.log(usuario1.Nome + " e " + usuario2.Nome + " têm a mesma idade");
+  }
+}
+
+function compararAltura(usuario1, usuario2) {
+  if (usuario1.AlturaCm > usuario2.AlturaCm) {
+    console.log(usuario1.Nome + " é mais alto(a) do que " + usuario2.Nome);
+  } else if (usuario1.AlturaCm < usuario2.AlturaCm) {
+    console.log(usuario2.Nome + " é mais alto(a) do que " + usuario1.Nome);
+  } else {
+    console.log(usuario1.Nome + " e " + usuario2.Nome + " têm a mesma altura");
+  }
+}
+
+function compararCores(usuario1, usuario2) {
+  if (usuario1.CorFavorita === usuario2.CorFavorita) {
+    console.log(usuario1.Nome + " e " + usuario2.Nome + " têm a mesma cor favorita: " + usuario1.CorFavorita);
+  }
+}
+
+// Obter informações dos usuários e executar comparações automaticamente
+obterInformacoes();
+
+    </script>
+</body>
+
+</html>
