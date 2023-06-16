@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio1</title>
+</head>
+
+<body>
+    <h1>Hola mundo</h1>
+    <h1>Olá Mundo</h1>
+    <h1>Hello World</h1>
+    
+    <script>
+
+function Usuario(nome) {
+  this.Nome = nome;
+}
+function obterInformacoes() {
+  let usuarios = [];
+
+  do {
+    let nomeUsuario = prompt("Digite o nome do usuário:");
+    let usuario = new Usuario(nomeUsuario);
+
+    usuario.Sobrenome = prompt("Digite o sobrenome do " + nomeUsuario + ":");
+    usuario.Idade = prompt("Digite a idade do " + nomeUsuario + ":");
+
+    usuarios.push(usuario);
+
+    let adicionarOutro = prompt("Deseja adicionar outro registro? (S/N)").toUpperCase();
+    if (adicionarOutro !== "S") {
+      break;
+    }
+  } while (true);
+
+  console.log("---- Registros dos Usuários ----");
+  usuarios.forEach(function(usuario) {
+    console.log(usuario);
+  });
+
+
+}
+
+obterInformacoes();
+
+
+
+    </script>
+</body>
+
+</html>
