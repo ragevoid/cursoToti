@@ -42,11 +42,32 @@ function obterInformacoes() {
   });
 
 
+
+  compararIdades(usuarios);
 }
 
+
+
+function compararIdades(usuarios) {
+  if (usuarios.length < 2) {
+    console.log("É necessário pelo menos 2 usuários para comparar as idades.");
+    return;
+  }
+
+  let maisVelho = usuarios[0];
+  let maisNovo = usuarios[0];
+
+  for (let i = 1; i < usuarios.length; i++) {
+    if (usuarios[i].Idade > maisVelho.Idade) {
+      maisVelho = usuarios[i];
+    } else if (usuarios[i].Idade < maisNovo.Idade) {
+      maisNovo = usuarios[i];
+    }
+  }
+
+  console.log(maisVelho.Nome + " é mais velho(a) do que " + maisNovo.Nome);
+}
 obterInformacoes();
-
-
 
     </script>
 </body>
