@@ -14,12 +14,14 @@
     <h1>Hello World</h1>
     
     <script>
-
+// Definição da função construtora Usuario
 function Usuario(nome) {
   this.Nome = nome;
 }
+
+// Função para obter informações dos usuários
 function obterInformacoes() {
-  let usuarios = [];
+  let usuarios = []; // Array para armazenar os usuários
 
   do {
     let nomeUsuario = prompt("Digite o nome do usuário:");
@@ -41,13 +43,10 @@ function obterInformacoes() {
     console.log(usuario);
   });
 
-
-
   compararIdades(usuarios);
 }
 
-
-
+// Função para comparar idades dos usuários
 function compararIdades(usuarios) {
   if (usuarios.length < 2) {
     console.log("É necessário pelo menos 2 usuários para comparar as idades.");
@@ -67,8 +66,9 @@ function compararIdades(usuarios) {
 
   console.log(maisVelho.Nome + " é mais velho(a) do que " + maisNovo.Nome);
 }
-obterInformacoes();
 
+// Chamar a função para obter informações dos usuários
+obterInformacoes();
     </script>
 </body>
 
